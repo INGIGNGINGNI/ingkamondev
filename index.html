@@ -9,14 +9,26 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style-custom.css">
 
+    <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 
 </head>
 <body>
+
+<div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+    </div>
+</div>
     
 <!-- Header -->
-<div class="container">
+<div class="container bg--white border-bottom wow slideInDown fixed-top" data-wow-duration="0.75s" data-wow-delay="0s">
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -30,13 +42,13 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="#home">หน้าแรก</a>
-                    <a class="nav-link" href="#skills">ทักษะ</a>
-                    <a class="nav-link" href="#work-ex">การทำงาน</a>
-                    <a class="nav-link" href="#project">ผลงาน</a>
-                    <a class="nav-link" href="#academic">การแข่งขันวิชาการ</a>
-                    <a class="nav-link" href="#activities">กิจกรรม</a>
-                    <a class="nav-link" href="#contact">ติดต่อ</a>
+                    <li class="scroll-to-section"><a class="nav-link active" href="#home">หน้าแรก</a></li>
+                    <li class="scroll-to-section"><a class="nav-link" href="#skills">ทักษะ</a></li>
+                    <li class="scroll-to-section"><a class="nav-link" href="#work-ex">การทำงาน</a></li>
+                    <li class="scroll-to-section"><a class="nav-link" href="#project">ผลงาน</a></li>
+                    <li class="scroll-to-section"><a class="nav-link" href="#academic">การแข่งขันวิชาการ</a></li>
+                    <li class="scroll-to-section"><a class="nav-link" href="#activities">กิจกรรม</a></li>
+                    <li class="scroll-to-section"><a class="nav-link" href="#contact">ติดต่อ</a></li>
                 </div>
             </div>
         </div>
@@ -45,11 +57,11 @@
 <!-- end Header -->
 
 <!-- Intro -->
-<div class="container">
+<div class="container margin-intro wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" id="home">
     <div class="container">
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0">
-                <div class="intro-left-col">
+                <div class="intro-left-col wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                     <div class=" container intro-left-col-content">
                         <h2 class="intro-name pb-2">INGKAMON POOLNUAL is </h2>
                         <h1 class="txt-type pb-2" data-wait="3000"
@@ -75,7 +87,7 @@
                 </div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0">
-                <div class="intro-right-col">
+                <div class="intro-right-col wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                     <div class="container d-flex justify-content-center">
                         <img src="assets/image/intro-me.png" alt="" class="intro-img">
                     </div>
@@ -91,9 +103,11 @@
     <div class="row">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div class="container">
-                <h2>ทักษะภาษาและซอฟต์แวร์</h2>
-                <div class="underline"></div>
-                <div class="d-flex justify-content-center">
+                <div class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                    <h2>ทักษะภาษาและซอฟต์แวร์</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="d-flex justify-content-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                     <div class="owl-carousel owl-theme">
                         <div class="item ps-3">
                             <div class="block-card">
@@ -214,7 +228,7 @@
 <!-- Work Experience -->
 <div class="container mt-lg-5" id="work-ex">
     <div class="row">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
             <!-- <img src="assets/image/work-ex-image.jpg" alt="" class="intro-img"> -->
             <div class="container px-xl-5">
                 <div id="carousel-work" class="carousel slide" data-bs-ride="carousel">
@@ -241,7 +255,7 @@
             </div>
         </div>
 
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
             <div class="container mt-3">
                 <h2>ประสบการณ์การทำงาน</h2>
                 <div class="underline"></div>
@@ -264,14 +278,14 @@
 <div class="container mt-lg-5 tab-show" id="project">
     <div class="container">
         <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                 <h2>ผลงาน</h2>
                 <div class="underline"></div>
             </div>
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="d-flex align-items-start">
                     <div class="row">
-                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                             <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
                                 aria-orientation="vertical">
                                 <button class="nav-link my-3 active" id="tab-1-tab" data-bs-toggle="pill"
@@ -291,7 +305,7 @@
                                     aria-labelledby="tab-1-tab" tabindex="0">
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3 wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                                                 <figure class="snip1401">
                                                     <img src="assets/image/project/web/web-1.png" alt="prj-1" />
                                                     <figcaption>
@@ -306,7 +320,7 @@
                                                 <p>โปรเจคจบการศึกษา</p>
                                             </div>
                                     
-                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3 wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                                                 <figure class="snip1401">
                                                     <img src="assets/image/project/web/web-2.png" alt="prj-2" />
                                                     <figcaption>
@@ -321,7 +335,7 @@
                                                 <p>โปรเจครายวิชา Web Programming</p>
                                             </div>
                                     
-                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3 wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                                                 <figure class="snip1401">
                                                     <img src="assets/image/project/web/web-3.png" alt="prj-3" />
                                                     <figcaption>
@@ -336,7 +350,7 @@
                                                 <p>ใช้งานภายในสโมสรนิสิตคณะวิทยาศาสตร์ มหาวิทยาลัยทักษิณ</p>
                                             </div>
                                     
-                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                                                 <figure class="snip1401">
                                                     <img src="assets/image/project/web/web-6.png" alt="prj-6" />
                                                     <figcaption>
@@ -351,7 +365,7 @@
                                                 <p>โปรเจครายวิชา Mobile Programming</p>
                                             </div>
                                     
-                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-1 wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                                                 <figure class="snip1401">
                                                     <img src="assets/image/project/web/web-7.png" alt="prj-7" />
                                                     <figcaption>
@@ -366,7 +380,7 @@
                                                 <p class="text-center">โปรเจครายวิชา E-Commerce</p>
                                             </div>
                                     
-                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                                                 <figure class="snip1401">
                                                     <img src="assets/image/project/web/web-8.png" alt="prj-8" />
                                                     <figcaption>
@@ -381,7 +395,7 @@
                                                 <p class="text-center">การทดลองประกอบอาชีพ (Job trial) ภายใต้แผนงานการสร้างผู้ประกอบการในห้องเรียน</p>
                                             </div>
                                     
-                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                                                 <figure class="snip1401">
                                                     <img src="assets/image/project/web/web-4.png" alt="prj-4" />
                                                     <figcaption>
@@ -396,7 +410,7 @@
                                                 <p class="text-center">โปรเจคที่ได้รับมอบหมายจากฝึกสหกิจศึกษา</p>
                                             </div>
                                     
-                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                                                 <figure class="snip1401">
                                                     <img src="assets/image/project/web/web-5.png" alt="prj-5" />
                                                     <figcaption>
@@ -586,7 +600,7 @@
                     <div class="accordion-body">
                         <div class="container">
                             <div class="row">
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3 wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                                     <figure class="snip1401">
                                         <img src="assets/image/project/web/web-1.png" alt="prj-1" />
                                         <figcaption>
@@ -601,7 +615,7 @@
                                     <p>โปรเจคจบการศึกษา</p>
                                 </div>
                         
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3 wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                                     <figure class="snip1401">
                                         <img src="assets/image/project/web/web-2.png" alt="prj-2" />
                                         <figcaption>
@@ -885,11 +899,11 @@
 <div class="container mt-5" id="academic">
     <div class="container">
         <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
                 <h2>การแข่งขันวิชาการ</h2>
                 <div class="underline mb-4"></div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
                 <div class="container ps-xl-0 py-xl-3">
                     <div id="carousel-academic-1" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -917,7 +931,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
                 <div class="work-ex text-center">
                     <h5 class="text-black pb-1">โครงการประชุมวิชาการ Sci Conference ประจำปีการศึกษา 2565</h5>
                     <h6 class="text-second pb-2">ณ คณะวิทยาศาสตร์ มหาวิทยาลัยทักษิณ วิทยาเขตพัทลุง</h6>
@@ -927,7 +941,7 @@
                         เว็บแอปพลิเคชันเพื่อการวินิจฉัยโรคในไม้ประดับด้วยเทคนิคต้นไม้ตัดสินใจ</h6>
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
                 <div class="container ps-xl-0 py-xl-3">
                     <div id="carousel-academic-2" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -961,7 +975,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
                 <div class="work-ex text-center">
                     <h5 class="text-black pb-1">โครงการประกวดโครงงาน/ผลงานสหกิจศึกษา และการศึกษาเชิงบูรณาการกับการทำงาน
                         ประจำปีการศึกษา 2565</h5>
@@ -982,11 +996,11 @@
 <div class="container mt-lg-5" id="activities">
     <div class="container">
         <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
                 <h2>กิจกรรมที่เข้าร่วม</h2>
                 <div class="underline"></div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
                 <div class="card-activities">
                     <img src="assets/image/samo-2562.jpg" alt="act-1" />
                 </div>
@@ -996,7 +1010,7 @@
                     <p>ดูแลเพจ Facebook และออกแบบแบนเนอร์ที่ใช้ในการประชาสัมพันธ์</p>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
                 <div class="card-activities">
                     <img src="assets/image/samo-2563.jpg" alt="act-2" />
                 </div>
@@ -1006,7 +1020,7 @@
                     <p>ควบคุมดูแลการจัดกิจกรรมของสโมสรและนิสิตประจำหลักสูตรต่าง ๆ</p>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
                 <div class="card-activities">
                     <img src="assets/image/samo-2565.jpg" alt="act-3" />
                 </div>
@@ -1016,7 +1030,7 @@
                     <p>ให้คำปรึกษาและแนะนำแนวทางการจัดกิจกรรมให้เป็นไปตามระเบียบของมหาวิทยาลัย</p>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
                 <div class="card-activities">
                     <img src="assets/image/activitie-1.jpg" alt="act-4" />
                 </div>
@@ -1027,7 +1041,7 @@
                         เพื่อพัฒนาเว็บแอปพลิเคชัน</p>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
                 <div class="card-activities">
                     <img src="assets/image/activitie-2.jpg" alt="act-5" />
                 </div>
@@ -1044,7 +1058,7 @@
 <!-- end Activities -->
 
 <!-- Footer -->
-<div class="container" id="contact">
+<div class="container wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s" id="contact">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center">
             <a class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" href="">
@@ -1072,6 +1086,8 @@
 <script src="assets/js/typewritter.js"></script>
 <script src="assets/js/skill-slide-carousel.js"></script>
 <script src="assets/js/all.js"></script>
+<script src="assets/js/templatemo-custom.js"></script>
+<script src="assets/js/animation.js"></script>
 <script>
     $(".hover").mouseleave(
         function() {
